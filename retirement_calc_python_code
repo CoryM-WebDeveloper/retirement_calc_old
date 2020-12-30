@@ -1,0 +1,56 @@
+"""This simple Python Program collects user input and computes retirement planning advice
+Written by:
+!!Cory Marth!!
+for LU's CSIS 110 course
+!!Fall 2020!!
+Be sure you fully document your code with
+comments like you see here."""
+
+"""Need Full Name, Current Age, Desired Retirment Age, Current Level of Retirement Savings, What is the Total Amount of Retirment Savings Is Needed at Retirement. There needs to be a simple statement(s) that show NAME, YEARS LEFT TO RETIREMENT, HOW MUCH NEEDS TO BE SAVED TO REACH RETIREMENT SAVINGS GOAL"""
+
+"""Full Name"""
+name = input("Enter your Full Name: ")
+
+"""Current Age"""
+currentAge = int(input("Enter your Current Age: "))
+
+"""Desired Retirment Age"""
+desiredRetirementage = int(input("Enter your desired Retirement Age: "))
+
+"""Current Level of Retirement Savings"""
+currentSavings = int(input("Enter your current level of Retirement Savings: "))
+
+"""What is the Total Amount of Retirment Savings Is Needed at Retirement"""
+retirementGoal = int(input("Enter your Retirement Savings Goal: "))
+
+"""Years left until retirement"""
+remainingYears = desiredRetirementage - currentAge
+
+"""Earnings Needed to Retire"""
+remainingSavings = retirementGoal - currentSavings
+
+"""Verify Inputs"""
+print(" ")
+print("Inputs Summary. You Chose: ")
+print("Full Name: ", name)
+print("Current Age: ", currentAge)
+print("Desired Retirement Age: ", desiredRetirementage)
+print("Current Savings: ", currentSavings)
+print("Retirment Goal: ", retirementGoal)
+"""print(remainingYears)
+print(remainingSavings)"""
+
+"""Output with Name, Years until Retirement, and Needed Saving until retirement goal is reached
+print(" ")
+print("Your Results: ")
+print("Name: ", name)
+print("Years remaining until retirement: ", remainingYears)
+print("Remaining Savings Goal: ", remainingSavings)"""
+
+"""Statement"""
+print(" ")
+print(name)
+print("You have", remainingYears, "years until you are ready to retire.", "In order to reach your retirement goal, you will need to save", remainingSavings, "USD.")
+
+"""Press Enter to close"""
+input("prompt: ")
