@@ -53,4 +53,4 @@ print(name)
 print("You have", remainingYears, "years until you are ready to retire.", "In order to reach your retirement goal, you will need to save", remainingSavings, "USD.")
 
 """Press Enter to close"""
-input("prompt: ")
+input("prompt: ") 
